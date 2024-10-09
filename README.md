@@ -16,9 +16,9 @@
     * Select it as the default schema using an SQL command.
     * Import [the data](./assets/task-dataset/infectious_cases.csv) using the Import wizard.
     * Review the data to get familiar with the context.
-        💡 `Entity` and `Code` attributes are repeated constantly. Eliminate this redundancy through data normalization.
 
-2. Normalize the `infectious_cases` table to the 3rd normal form. Save two tables with the normalized data in the same schema.
+2. `Entity` and `Code` attributes are repeated constantly. Eliminate this redundancy through data normalization.
+   Normalize the `infectious_cases` table to the 3rd normal form. Save two tables with the normalized data in the same schema.
 
 3. Analyze the Data:
     * For each unique combination of `Entity` and `Code` or their `id`, calculate the average, minimum, maximum, and sum for the `Number_rabies` attribute.
