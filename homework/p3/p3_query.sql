@@ -9,7 +9,7 @@ SELECT
     SUM(rabies) AS sum_rabies_cases 
 FROM infectious_cases
 LEFT JOIN regions ON regions.id = region_id
-WHERE rabies IS NOT NULL
+WHERE rabies IS NOT NULL AND rabies <> ''
 GROUP BY region_id
 ORDER BY avg_rabies_cases DESC
 LIMIT 10;
